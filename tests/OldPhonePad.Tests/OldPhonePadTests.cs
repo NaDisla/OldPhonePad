@@ -29,7 +29,7 @@ namespace OldPhonePad.Tests
         public void Unknown_Digits_Are_Ignored_By_Default()
         {
             var result = OldPhonePadConverter.OldPhonePad("101#");
-            Assert.Equal(string.Empty, result);
+            Assert.Equal(" ", result);
         }
 
         [Fact]

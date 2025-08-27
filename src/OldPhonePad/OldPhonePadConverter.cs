@@ -18,15 +18,14 @@ namespace OldPhonePad
             ['6'] = "MNO",
             ['7'] = "PQRS",
             ['8'] = "TUV",
-            ['9'] = "WXYZ",
-            ['0'] = " "
+            ['9'] = "WXYZ"
         };
 
         /// <summary>
         /// Public entry point with sensible defaults.
         /// </summary>
         public static string OldPhonePad(string input) =>
-            OldPhonePad(input, new OldPhonePadOptions());
+            OldPhonePad(input, new OldPhonePadOptions { ZeroAsSpace = true });
 
         /// <summary>
         /// Overload with options to make behavior explicit in tests or extensions.
