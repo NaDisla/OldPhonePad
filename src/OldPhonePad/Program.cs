@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("OldPhonePad (.NET 8)");
-            Console.WriteLine("Type a sequence and ends with # (example: 4433555 555666#):");
+            Console.Write("Type a sequence and ends with # (example: 4433555 555666#): ");
 
             string? input = Console.ReadLine();
 
